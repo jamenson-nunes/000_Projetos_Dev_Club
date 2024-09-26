@@ -26,6 +26,7 @@
 .imagem-mario-luigi{
     height: 500px;
 }
+
 body{
     height: 100vh; 
 }
@@ -62,10 +63,37 @@ position: fixed;
 top: 0;
 }
 
-p{
+p {
     color: white ;
 }
 
 .link-whatsapp img {
-    height: 100px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}  
+
+.header{
+    display: flex;
+    align-items: center; /* Alinhar no centro */
+    gap: 30px; /*-- discanciamento */
+    margin: 30px; /* distanciamento em todos os lados */
+}
+
+.header img{
+    height: 60px;
+}
+
+.header a{
+    color: white;
+    font-size: 25px;
+    cursor: pointer; /* para o cursor virar a maozinha quando passar por cima do texto do link */
+   }
+
+/* inserir ação para quando o mouse passar por cima do link */
+.header a:hover {
+    color: #c51111;
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
 }
